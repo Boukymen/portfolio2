@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Quicksand:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+
+
+* {
+    /* font-family: 'Moon Dance', cursive; */
+     font-family: 'Quicksand', sans-serif;
+     /* font-family: 'Montserrat', sans-serif; */
+     padding: 0;
+     scroll-behavior: smooth;
+     margin: 0;
+}
+#header {
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:70px;
+    vertical-align: center;
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+}
+#header-img img{
+    width: 15%;
+    height: auto;
+    padding: 10px 20px;
+}
+#navbar {
+    
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-right: 30px;
+    
+
+}
+#nav-link {
+    padding: 10px 20px;
+}
+
+#nav-link  a{
+    text-decoration: none;
+    color: #FFF;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+#nav-link :hover{
+    color: rgb(255, 108, 10);
+    }
+#welcome-section {
+    padding-top: 90px;
+    height: 100vh;
+    background: url('./bg.jpg') ;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-position: center;
+}
+#welcome-section h1 {
+    color: #fff;
+    text-align: center;
+    padding-top: 30vh;  
+    font-size: 40px;
+}
+
+
+#welcome-section h2 {
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 200;
+    color: rgb(255, 108, 10);
+    font-size: 20px;
+}
+
+   
+#btn {
+    /* display:inline-block; */
+    padding:0.8em 2.7em;
+    /* margin:0.5em 0.7em 0.7em 0; */
+    border-radius:2em;
+    border: 1px solid rgb(155, 136, 126);
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight: 400;
+    background-color:#FFF;
+    transition: all 0.2s;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    align-items: center;
+    text-align: center;
+  }
+  a{
+      text-decoration: none;
+      color: #333
+  }
+
+  
+#btn:hover{
+    background-color:rgb(250, 219, 192);
+    font-weight: 800;
+    border: 0.8px;
+    }
+#btn:hover a { 
+    color: rgb(255, 102, 0);
+}
+
+
+    
+    @media only screen and (max-width: 999px) {
+        #header-title {
+          background-color: lightblue;
+          font-size: 18px;
+        }
+      }
+    
+    @media only screen and (max-width: 850px) {
+    #header-title {
+        background-color: lightblue;
+        font-size: 14px;
+    }
+    }
+
+.project-tile{
+    padding: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.cards{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #fff;
+    justify-content: center;
+    margin: 0 15vw;
+}
+.cards > .card {
+    background-color: #333;
+    width: 300px;
+    border-radius: 20px;
+    height: 400px;
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin: 10px;
+
+}
+.card img {
+    border-radius: 20px;
+    width: 100%;
+    height: 360px;
+    transition: transform 250ms;
+}
+.code{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s linear;
+}
+.title{
+        transition: 0.5s;
+}
+.card:hover img{
+    transform: translateY(-10px);
+}
+.card:hover .code {
+    
+    visibility: visible;
+    opacity: 1;
+    color: rgb(255, 108, 10);
+}
+
+.footer-title {
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-bottom: 40px;
+}
+.footer-title h1 {
+    margin-top: 20px;
+}
+.footer-title h3 {
+    padding-top: 10px;
+    font-weight: 400;
+}
+footer {
+    width: 95%;
+    height: 250px;
+    background-color:rgb(248, 224, 200);    
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+.confid {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+.confid span {
+    
+    padding-left: 30px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.confid span:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 14px;
+    padding-left: 20px;
+}
