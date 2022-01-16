@@ -110,21 +110,6 @@
 }
 
 
-    
-    @media only screen and (max-width: 999px) {
-        #header-title {
-          background-color: lightblue;
-          font-size: 18px;
-        }
-      }
-    
-    @media only screen and (max-width: 850px) {
-    #header-title {
-        background-color: lightblue;
-        font-size: 14px;
-    }
-    }
-
 .project-tile{
     padding: 30px;
     color: rgb(0, 0, 0);
@@ -226,4 +211,40 @@ footer {
 footer p {
     font-size: 14px;
     padding-left: 20px;
+}
+
+
+
+    
+@media only screen and (max-width: 999px) {
+    #header-img img{
+        width: 110px;
+    }        
+    #nav-link  a{
+        font-size: 15px;
+    }
+    footer{
+        margin: 17px;
+    }
+    .confid span {
+        font-size: 15px;
+
+    }
+
+  }
+
+@media only screen and (max-width: 850px) {
+    #header-img img{
+        width: 105px;
+    }        
+    #nav-link  a{
+        font-size: 14px;
+    }
+    footer{
+        margin: 15px;
+    }
+    .confid span {
+        font-size: 12px;
+
+    }
 }
